@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link href="style/splash.css" rel="stylesheet" type="text/css" />
+
+    <title>Splash</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar box">
+            <nav class="sidebar ">
+                <div class="btn">
+                    <span class="fa fa-bars"></span>
+
+                    </span>
+                </div>
+                <div class="header">
+                    <p id="text">Splash</p>
+                </div>
+                <ul>
+                    <li class=>
+                        <a href="#" class="home-btn">Home
+            <span class="fa fa-caret-down"></span>
+           
+          </a>
+                        <ul class="home-show">
+                            <li><a href="#">Home1</a></li>
+                            <li><a href="#">Home2</a></li>
+                            <li><a href="#">Home3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="#" class="page-btn">Page
+            <span class="fa fa-caret-down"></span>
+          </a>
+                        <ul class="page-show">
+                            <li><a href="#">Page1</a></li>
+                            <li><a href="#">page2</a></li>
+                            <li><a href="#">Page3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Porfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="sub">
+                    <p id="sub">Subscribe for newsletter</p>
+                    <input id="email" type="email" placeholder="Enter Email Address" />
+                </div>
+                <div class="copyright">
+                    <p>
+                        Copywrite &copy;2021 All rights reserved | This template is made with by
+                    </p>
+                </div>
+            </nav>
+        </div>
+
+        <div class="createUser box">
+            <h1 id="cuser"><a href="#">Create User</a> </h1>
+            <div class="form1">
+                <form action="#">
+                    <div class="formField">
+                        <label for="name">Full Name</label>
+                        <input class="inField" type="text">
+                    </div>
+                    <div class="formField">
+                        <label for="email">Email</label>
+                        <input class="inField" type="email">
+                    </div>
+                    <div class="formField">
+                        <label for="role">Role</label>
+                        <select class="inField" name="role" id="role">
+                        <option value="#" >Select Role</option>
+                        <option value="SDE" >SDE</option>
+                    </select>
+                    </div>
+                    <div class="formField">
+                        <label for="Select Landing Page">Landing Page</label>
+                        <select class="inField" name="page" id="page">
+                        <option value="#" >Select Landing Page</option>
+                        <option value="1" >Page1</option>
+                    </select>
+                    </div>
+                    <div class="formField">
+                        <label for="country">Country</label>
+                        <select class="inField" name="country" id="country">
+                        <option value="#" >United Kingdom</option>
+                        <option value="india" >India</option>
+                    </select>
+                    </div>
+                    <div class="formField">
+                        <label for="no">Phone Number</label>
+                        <input class="inField" type="text">
+                    </div>
+                    <div class="submited">
+                        <button type="submit">Create New Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="manageUser box">
+            <h1 id="muser"><a href="manageUser.html">Manage User</a></h1>
+            <div class="MU">
+                <h1 class="mu1">MULTIPLE USER REGISTRATION</h1>
+                <h1 class="mu2"><span class="fa fa-arrow-circle-down"></span>Download Template</h1>
+                <h1 class="mu2"><span class="fa fa-arrow-circle-up"></span>Upload Bulk User Template</h1>
+                <p id="para">** Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius assumenda, delectus harum dolore deleniti maiores distinctio architecto labore perferendis consectetur sunt veniam sint voluptas, dolores iure tempore molestiae est.
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(".home-btn").click(function() {
+        $("nav ul .home-show").toggleClass("show");
+    });
+    $(".page-btn").click(function() {
+        $("nav ul .page-show").toggleClass("show1");
+    });
+    $(".btn").click(function() {
+        $(".sidebar").toggleClass("close");
+        $("#email").toggleClass("close1");
+        $("#text").toggleClass("close2");
+        $(this).toggleClass("reposition_btn");
+    });
+</script>
+
+</html>
